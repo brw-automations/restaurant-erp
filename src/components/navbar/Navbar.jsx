@@ -14,16 +14,16 @@ const Navbar = () => {
           <img src={logo} />
         </div>
         <div className="navbar-links_container">
-          <CustomLink to="/">Home</CustomLink>
-          <CustomLink to="/products">Products</CustomLink>
-          <CustomLink to="/checkout">Checkout</CustomLink>
-          <CustomLink to="/about">About</CustomLink>
-          <CustomLink to="/contact">Contact</CustomLink>
+          <CustomLink  to="/">Home</CustomLink>
+          <CustomLink  to="/products">Products</CustomLink>
+          <CustomLink  to="/checkout">Checkout</CustomLink>
+          <CustomLink  to="/about">About</CustomLink>
+          <CustomLink  to="/contact">Contact</CustomLink>
         </div>
       </div>
       <div className="navbar-sign">
-        <CustomLink to="/auth">Sign in</CustomLink>
-        <CustomLink to="/auth">
+        <CustomLink  to="/auth">Sign in</CustomLink>
+        <CustomLink  to="/auth">
           <button type="button">Sign up</button>
         </CustomLink>
       </div>
@@ -44,16 +44,16 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="navbar-menu_container slide-fwd-center">
             <div className="navbar-menu_container-links">
-              <CustomLink to="/">Home</CustomLink>
-              <CustomLink to="/products">Products</CustomLink>
-              <CustomLink to="/checkout">Checkout</CustomLink>
-              <CustomLink to="/about">About</CustomLink>
-              <CustomLink to="/contact">Contact</CustomLink>
+              <CustomLink onClick={() => setToggleMenu(false)} to="/">Home</CustomLink>
+              <CustomLink onClick={() => setToggleMenu(false)} to="/products">Products</CustomLink>
+              <CustomLink onClick={() => setToggleMenu(false)} to="/checkout">Checkout</CustomLink>
+              <CustomLink onClick={() => setToggleMenu(false)} to="/about">About</CustomLink>
+              <CustomLink onClick={() => setToggleMenu(false)} to="/contact">Contact</CustomLink>
             </div>
             <div className="navbar-menu_container-links-sign">
-              <CustomLink to="/auth" >Sign in</CustomLink>
-              
-              <CustomLink to="/auth">
+              <CustomLink onClick={() => setToggleMenu(false)} to="/auth">Sign in</CustomLink>
+
+              <CustomLink onClick={() => setToggleMenu(false)} to="/auth">
                 <button type="button">Sign up</button>
               </CustomLink>
             </div>
