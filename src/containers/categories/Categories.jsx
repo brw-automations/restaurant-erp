@@ -11,7 +11,7 @@ function Categories() {
         dispatch(
           categoriesActions.add({
             name: "test cat",
-            icon: "src/assets/images/Josephine BBQ-71.JPG",
+            icon: "public/images/Josephine BBQ-35.JPG",
           })
         );
     }
