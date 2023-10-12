@@ -5,11 +5,11 @@ const initialState = {
   categories: [
     {
       name: "main",
-      icon: "../../assets/images/Josephine BBQ-9.JPG",
+      icon: "/assets/images/Josephine BBQ-9.JPG",
     },
     {
       name: "alcoholic drinks",
-      icon: "../../assets/images/Josephine BBQ-2.JPG",
+      icon: "/assets/images/Josephine BBQ-2.JPG",
     },
   ],
 };
