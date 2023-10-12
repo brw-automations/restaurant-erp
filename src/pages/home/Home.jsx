@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Categories from '../../containers/categories/Categories'
 function Home() {
   return (
       <div>
-          Home
+          <Categories />
     </div>
   )
 }

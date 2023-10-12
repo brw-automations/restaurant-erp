@@ -9,7 +9,6 @@ const CustomLink = ({ to, children, ...props }) => {
     <Link
       to={to}
       {...props}
-
     >
       {children}
     </Link>
