@@ -1,5 +1,6 @@
 import { useResolvedPath, useMatch, Link } from "react-router-dom";
 
+
 const CustomLink = ({ to, children, ...props }) => {
   const resolvedPath = useResolvedPath({ pathname: to, end: true });
   const isActive = useMatch(resolvedPath.pathname);
@@ -7,9 +8,8 @@ const CustomLink = ({ to, children, ...props }) => {
   return (
     <Link
       to={to}
-
       {...props}
-      className={isActive ? "active" : ""}
+
     >
       {children}
     </Link>
