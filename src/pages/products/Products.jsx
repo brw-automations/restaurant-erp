@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Products from "../../containers/products/Products";
+import Search from "../../components/search/Search";
 import "./Products.css";
-function Products() {
+function ProductsPage() {
   return (
-    <div>Products</div>
-  )
+    <>
+      <Search />
+
+      <Products />
+    </>
+  );
 }
 
-export default Products
+export default ProductsPage;

@@ -1,0 +1,37 @@
+.search__form-wrapper {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.search__form-wrapper form {
+    display: flex;
+    gap: 20px;
+}
+
+.search__input {
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    text-transform: lowercase;
+}
+
+.search__btn {
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color-light);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.search__btn:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-color);
+}
