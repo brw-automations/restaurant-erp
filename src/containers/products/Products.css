@@ -1,0 +1,103 @@
+.products__container {
+    height: 75vh;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 20px;
+}
+
+.products__container::-webkit-scrollbar {
+    display: none;
+}
+
+.product__wrapper {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--secondary-color-light);
+    box-shadow: 1px 1px 8px 1px #888888b2;
+}
+
+.product__intro {
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.product__intro img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.product__details{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5px 15px; */
+    width: 100%;
+    height: 30%;
+}
+
+.product__details-name{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-transform: capitalize;
+    justify-content: center;
+    padding-left: 10px;
+}
+.product__details-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    background-color: var(--text-color);
+    color: var(--secondary-color-light);
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+}
+
+.product__details-cart:hover{
+    color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 700px) {
+    .products__container {
+        height: 75vh;
+        width: 100%;
+        gap: 10px;
+        padding: 5px 10px;
+    }
+
+    .product__wrapper {
+        width: 45%;
+        height: 45%;
+        
+    }
+
+    .product__intro {
+        height: 70%;
+        width: 100%;
+        position: relative;
+    }
+
+    .product__intro img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}

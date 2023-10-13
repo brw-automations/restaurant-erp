@@ -1,11 +1,16 @@
-import React from 'react'
-import Categories from '../../containers/categories/Categories'
+import React from "react";
+
+
+import "./Home.css"
+import Categories from "../../containers/categories/Categories";
+import Products from "../../containers/products/Products";
 function Home() {
   return (
-      <div>
-          <Categories />
+    <div className="home__container">
+      <Categories />
+      <Products />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

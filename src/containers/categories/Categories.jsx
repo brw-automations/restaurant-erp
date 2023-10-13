@@ -20,7 +20,7 @@ function Categories() {
   return (
     <div className="categories-wrapper">
       {categories.map((item, index) => (
-        <Card>
+        <Card key={index}>
           <img
             style={{ borderRadius: "50%" }}
             src={item.icon}
