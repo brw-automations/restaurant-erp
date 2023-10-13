@@ -2,8 +2,9 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 5px;
     align-items: center;
-    background-color: var(--secondary-color) ;
+    background-color: var(--secondary-color-light) ;
     padding: 10px;
 }
