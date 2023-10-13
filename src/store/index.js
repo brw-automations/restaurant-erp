@@ -1,7 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-
-const initialState = {
+const initialCategoriesState = {
   categories: [
     {
       name: "main",
@@ -14,29 +13,43 @@ const initialState = {
   ],
 };
 
+const initialAuthState = { isAuthenticated: false };
+
 const categoriesSlice = createSlice({
   name: "categories",
-  initialState: initialState,
+  initialState: initialCategoriesState,
   reducers: {
     add(state, action) {
       state.categories.push(action.payload);
     },
-      remove(state, action) {
-       state.categories.splice(
-          state.categories.indexOf(action.payload),
-          1
-        );
+    remove(state, action) {
+      state.categories.splice(state.categories.indexOf(action.payload), 1);
     },
   },
 });
 
+const authSlice = createSlice({
+  name: "auth",
+  initialState: initialAuthState,
+  reducers: {
+    login(state) {
+      state.isAuthenticated = true;
+    },
+    logout(state) {
+      state.isAuthenticated = false;
+    },
+  },
+});
 
 const store = configureStore({
-    reducer: {
-        categories: categoriesSlice.reducer
-    }
-})
-
+  reducer: {
+    categories: categoriesSlice.reducer,
+    auth: authSlice.reducer,
+  },
+});
 
 export const categoriesActions = categoriesSlice.actions;
-export default store
+export const authActions = authSlice.actions;
+
+
+export default store;
