@@ -9,12 +9,13 @@ import Auth from "./pages/auth/Auth"
 import Checkout from "./pages/checkout/Checkout"
 import ProductsPage from "./pages/products/Products";
 import Contact from "./pages/contact/Contact";
+import Footer from './components/footer/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Fragment>
+    <div className='app'>
       <Navbar />
       <main className="container">
         <Routes>
@@ -26,7 +27,8 @@ function App() {
           <Route path="/auth" element={<Auth />} />
         </Routes>
       </main>
-    </Fragment>
+      <Footer />
+    </div>
   );
 }
 
